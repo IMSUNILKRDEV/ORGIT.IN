@@ -99,3 +99,8 @@ footer h3{margin-top:0}
 .fbrand{display:flex;gap:16px;align-items:flex-start}
 .flogo{width:64px;height:64px;margin:0;flex:none;border-radius:14px}
 @media (min-width:760px){header img{height:64px;width:64px}header .wrap{height:80px}}
+/* hero: gap kam, buttons pehli screen par */
+.hero h1{font-size:clamp(44px,7.2vw,84px)}
+.hero p{margin:14px 0 22px}
+.hero .wrap{padding-top:24px;padding-bottom:70px}
+@media (min-width:760px){.hero .wrap{padding-top:28px;padding-bottom:80px;align-items:center}}
