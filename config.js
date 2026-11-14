@@ -6,7 +6,7 @@ window.ORGIT = {
   whatsapp: "",
 
   // Trade enquiry form ki key: README mein step dekhiye (web3forms.com se free milti hai)
-  formKey: "",
+  formKey: "7982669762",
 
   phone: "+91 1135812384",
   email: "care@orgit.in",
