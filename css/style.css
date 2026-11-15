@@ -110,3 +110,8 @@ footer h3{margin-top:0}
 .ct a:hover{color:#fff}.ct a:hover .ic{color:#fff}
 .ct .ic{width:18px;height:18px;color:var(--lime);display:grid;place-items:center;flex:none;transition:color .2s}
 .ct svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+
+.adr{margin-bottom:14px}.adr:last-child{margin-bottom:0}
+.adr b{display:flex;align-items:center;gap:8px;color:#fff;font-size:13px;font-weight:700;letter-spacing:.03em;margin-bottom:3px}
+.adr svg{width:15px;height:15px;fill:none;stroke:var(--lime);stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.adr p{margin:0}
