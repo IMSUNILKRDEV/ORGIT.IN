@@ -104,3 +104,9 @@ footer h3{margin-top:0}
 .hero p{margin:14px 0 22px}
 .hero .wrap{padding-top:24px;padding-bottom:70px}
 @media (min-width:760px){.hero .wrap{padding-top:28px;padding-bottom:80px;align-items:center}}
+
+.ct{list-style:none;padding:0;display:grid;gap:10px}
+.ct a{display:flex;align-items:center;gap:10px;text-decoration:none;color:#c3d6bd}
+.ct a:hover{color:#fff}.ct a:hover .ic{color:#fff}
+.ct .ic{width:18px;height:18px;color:var(--lime);display:grid;place-items:center;flex:none;transition:color .2s}
+.ct svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
