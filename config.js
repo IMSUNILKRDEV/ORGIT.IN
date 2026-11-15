@@ -3,10 +3,10 @@
    Badalne ke baad GitHub par is file ko save (commit) kar dijiye, site khud update ho jayegi. */
 window.ORGIT = {
   // WhatsApp business number, bina +91 ke 10 digit (abhi khali hai)
-  whatsapp: "",
+  whatsapp: "7982669762",
 
   // Trade enquiry form ki key: README mein step dekhiye (web3forms.com se free milti hai)
-  formKey: "7982669762",
+  formKey: "",
 
   phone: "+91 1135812384",
   email: "care@orgit.in",
