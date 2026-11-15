@@ -115,3 +115,11 @@ footer h3{margin-top:0}
 .adr b{display:flex;align-items:center;gap:8px;color:#fff;font-size:13px;font-weight:700;letter-spacing:.03em;margin-bottom:3px}
 .adr svg{width:15px;height:15px;fill:none;stroke:var(--lime);stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
 .adr p{margin:0}
+
+.gcs{display:grid;gap:14px}.gc{display:block;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;text-decoration:none;color:inherit}
+.gc b{display:block;font-size:19px;color:var(--deep)}.gc span{color:var(--muted)}.gc small{display:block;margin-top:6px}.gc small a{color:var(--leaf);font-weight:700}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .gc b{color:var(--lime)}}
+@media (min-width:760px){.gcs{grid-template-columns:repeat(3,1fr)}}
+
+.flinks{max-width:1080px;margin:26px auto 0;padding:16px 20px 0;border-top:1px solid #1d4a30;font-size:13px;display:flex;flex-wrap:wrap;gap:6px 18px}
+.flinks a{color:#8fa98f;text-decoration:none}.flinks a:hover{color:#fff}
