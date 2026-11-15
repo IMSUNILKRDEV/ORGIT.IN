@@ -6,7 +6,7 @@ function wa(t){var n=String(C.whatsapp||"").replace(/\D/g,"");if(n.length===10)n
 qa(".wa").forEach(function(a){a.href=wa("Hi ORGIT, I want to order makhana.")});
 qa("[data-cfg],[data-cfg-href]").forEach(function(a){var k=a.getAttribute("data-cfg")||a.getAttribute("data-cfg-href"),v=C[k];if(!v)return;
 var h=k==="phone"?"tel:"+v.replace(/[^+\d]/g,""):k==="email"?"mailto:"+v:k==="instagram"?"https://instagram.com/"+v.replace("@",""):v;
-a.href=h;var t=a.querySelector(".t")||a;if(a.hasAttribute("data-cfg"))t.textContent=k==="instagram"?"@"+v.replace("@",""):k==="website"?v.replace(/^https?:\/\//,""):v});
+a.href=h;var t=a.querySelector(".t")||a;if(a.hasAttribute("data-cfg"))t.textContent=k==="instagram"?v.replace("@",""):k==="website"?v.replace(/^https?:\/\//,""):v});
 qa("[data-store]").forEach(function(s){var u=(C.stores||{})[s.getAttribute("data-store")];if(!u)return;
 var a=document.createElement("a");a.className="live";a.href=u;a.target="_blank";a.rel="noopener";a.innerHTML=s.innerHTML;
 var m=a.querySelector("small");m.textContent="Buy now";m.setAttribute("data-hi","अभी खरीदें");s.parentNode.replaceChild(a,s)});
