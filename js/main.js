@@ -10,7 +10,16 @@ a.href=h;var t=a.querySelector(".t")||a;if(a.hasAttribute("data-cfg"))t.textCont
 qa("[data-store]").forEach(function(s){var u=(C.stores||{})[s.getAttribute("data-store")];if(!u)return;
 var a=document.createElement("a");a.className="live";a.href=u;a.target="_blank";a.rel="noopener";a.innerHTML=s.innerHTML;
 var m=a.querySelector("small");m.textContent="Buy now";m.setAttribute("data-hi","अभी खरीदें");s.parentNode.replaceChild(a,s)});
-if(C.launched)qa(".rib").forEach(function(e){e.style.display="none"});
+if(C.launched){qa(".stores > span[data-store]").forEach(function(e){e.classList.add("plain");var s=e.querySelector("small");if(s)s.style.display="none"})}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+var off=C.offline||[],ol=q("#offl");
+if(ol&&off.length){off.forEach(function(o){var li=document.createElement("li");li.innerHTML="<b>"+esc(o.name||o.city)+"</b><span>"+esc(o.name?(o.city||""):"Available in stores")+"</span>";ol.appendChild(li)})}else{var oc=q("#offlineCol");if(oc)oc.style.display="none"}
+var T=(C.testimonials||[]).filter(function(t){return t&&t.text}),G=C.google||{};
+var RS=q("#reviews");if(RS&&(T.length||G.url)){RS.hidden=false;var gl=q("#gline");
+if(G.rating&&G.url)gl.innerHTML="<b>★ "+esc(G.rating)+"</b> on Google ("+esc(G.count||"")+" reviews) · <a href=\""+esc(G.url)+"\" target=\"_blank\" rel=\"noopener\">See reviews</a>";else gl.style.display="none";
+var rv=q("#rv3");T.forEach(function(t){var f=document.createElement("figure");f.className="rv";f.innerHTML="<div class=\"st\">★★★★★</div><blockquote>"+esc(t.text)+"</blockquote><figcaption>"+esc(t.name)+(t.city?", "+esc(t.city):"")+"</figcaption>";rv.appendChild(f)})}
+if(C.delivery||C.returns){q("#care").hidden=false;
+[["#c-del",C.delivery],["#c-ret",C.returns]].forEach(function(p){var b=q(p[0]);if(p[1]){b.querySelector("p").textContent=p[1]}else b.style.display="none"})}
 var lang="en",els=qa("[data-hi]");
 els.forEach(function(e){e.setAttribute("data-en",e.textContent)});
 function setL(l){lang=l;document.documentElement.lang=l;document.body.classList.toggle("hi",l==="hi");
