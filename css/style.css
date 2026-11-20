@@ -147,5 +147,18 @@ footer h3{margin-top:0}
 
 .stores span.plain{border-style:solid;border-color:var(--leaf);color:var(--ink)}
 
-@media (min-width:480px){.stores{grid-template-columns:repeat(3,1fr)}}
 
+
+
+
+@media (min-width:760px){.hero .wrap{padding-bottom:40px}}
+
+/* hero badi + pehli screen par sirf hero; icon row fold ke neeche */
+.hero h1{font-size:clamp(48px,min(8vw,11.5vh),104px)}
+@media (min-width:760px){.hero{min-height:calc(100vh - 80px);min-height:calc(100svh - 80px);display:flex;align-items:center}.hero .wrap{width:100%}}
+/* online stores: 2 + 2 */
+.stores{grid-template-columns:1fr 1fr}
+/* WhatsApp brand colour */
+.btn.wa:not(.ghost){background:#25D366;color:#fff;display:inline-flex;align-items:center;gap:10px}
+.btn.wa:not(.ghost):hover{background:#1ebe5b;color:#fff}
+.btn.wa:not(.ghost)::before{content:"";width:20px;height:20px;flex:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l1.9-5.4A8.5 8.5 0 1 1 21 11.5z'/%3E%3Cpath d='M9 8.5c0 3.5 3 6.5 6.5 6.5l1.2-1.4-2-1-1 .8c-.8-.3-1.9-1.4-2.2-2.2l.8-1-1-2z'/%3E%3C/svg%3E") center/contain no-repeat}
